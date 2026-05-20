@@ -16,3 +16,6 @@ ps -aux --sort=-%cpu | head -5 >> $LOG_FILE
 echo "================================== Disk Space Utilization ============================" >> $LOG_FILE
 df -kh >> $LOG_FILE
 
+echo "================================== RAM Usage ============================" >> $LOG_FILE
+
+free -kh >> $LOG_FILE
