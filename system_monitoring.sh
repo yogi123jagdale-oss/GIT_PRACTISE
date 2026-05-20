@@ -12,3 +12,7 @@ ps -aux --sort=-%mem | head -5 >> $LOG_FILE
 
 echo "================================== Top 5 CPU consuming processes ============================" >> $LOG_FILE
 ps -aux --sort=-%cpu | head -5 >> $LOG_FILE
+
+echo "================================== Disk Space Utilization ============================" >> $LOG_FILE
+df -kh >> $LOG_FILE
+
